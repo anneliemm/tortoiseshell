@@ -1,0 +1,195 @@
+/*Universal Styles*/
+html {
+  font-size: 18px;
+}
+body {
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.4;
+  background-color: white;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+/*Header*/
+header {
+  background-image: url("/Users/Annelie/Projects/tortoiseshell/resources/images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  height: 30rem;
+  padding-top: 1rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cadetblue;
+  padding: 1rem 0;
+  color: white;
+}
+nav div {
+  display: flex;
+  align-items: center;
+}
+header img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+nav ul {
+  margin-right: 1rem;
+}
+nav li {
+  display: inline;
+  padding: 0 1rem;
+}
+.mobile-menu {
+  display: none;
+}
+header .flex {
+  display: flex;
+  justify-content: flex-end;
+}
+.main-banner {
+  background-color: white;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  padding: 1.5rem 5rem;
+  display: inline-block;
+}
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
+  nav.container {
+    max-width: 100%;
+  }
+  .main-banner {
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+  }
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+@media only screen and (max-width: 470px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+  header div span {
+    display: none;
+  }
+  .main-banner{
+    max-width: 100%;
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  .menu ul{
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+/* Icons Section */
+.supporting {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 470px){
+  .supporting {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3.77rem;
+  }
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem;
+}
+.icon img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+.icon img.paper-icon {
+  width: 3.5rem;
+}
+@media only screen and (max-width: 470px) {
+  .services {
+    height: auto;
+    margin: 0.77rem;
+    font-size: 0.77rem;
+  }
+}
+/* Info Section */
+.title {
+  background-color: cadetblue;
+  font-weight: bold;
+  color: white;
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
+}
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+.info p {
+  padding: 1rem 0;
+}
+@media only screen and (max-width: 470px) {
+  .info {
+    width: 100%;
+  }
+  .info .title {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+  .info p {
+    font-size: 0.77rem;
+    padding: 1rem;
+  }
+}
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  padding: 4rem 2rem;
+}
+footer img {
+  margin-left: 2rem;
+  margin-right: 1rem;
+  height: 1.5rem;
+}
+@media only screen and (max-width: 470px) {
+  footer {
+    justify-content: center;
+  }
+  footer div {
+    display: none;
+  }
+}
